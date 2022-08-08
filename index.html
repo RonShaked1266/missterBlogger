@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogin.</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body class="main-layout">
+
+    <div class="main-screen full" onclick="toggleMenu()"></div>
+
+    <div class="bg-header full main-layout">
+        <header class="main-header flex align-center space-between">
+            <div class="main-logo">Blogin<span>.</span></div>
+            <ul class="main-nav flex clean-list">
+                <li><a href="#">Journl</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button onclick="toggleMenu()" class="menu-toggle">☰</button>
+            <button onclick="toggleMenu()" class="menu-close">✖</button>
+        </header>
+    </div>
+
+
+    <main class="main-content card-layout">
+        <div class="card flex">
+            <img src="/img/001.png" alt="" class="card-image">
+            <div class="card-content">
+                <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis at soluta cum architecto minima,
+                    nesciunt culpa cupiditate aut totam nulla.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis at soluta cum architecto minima.
+                </p>
+                <button onclick="toggleModal()" class="btn btn-round">Continue Reading</button>
+            </div>
+        </div>
+        <div class="card flex">
+            <img src="/img/002.png" alt="" class="card-image">
+            <div class="card-content">
+                <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis at soluta cum architecto minima,
+                    nesciunt culpa.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis at soluta cum architecto minima,
+                    nesciunt culpa cupiditat.
+                    Aliquid, mollitia.
+                </p>
+                <button onclick="toggleModal()" class="btn btn-round">Continue Reading</button>
+            </div>
+        </div>
+        <div class="card flex">
+            <img src="/img/003.png" alt="" class="card-image">
+            <div class="card-content">
+                <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis at soluta cum architecto minima.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis at soluta cum architecto minima,
+                    nesciunt culpa cupiditate aut totam nulla, Aliquid, mollitia.
+                </p>
+                <button onclick="toggleModal()" class="btn btn-round">Continue Reading</button>
+            </div>
+        </div>
+    </main>
+
+    <section class="pages flex align-center space-between">
+        <div class="previous"><span>&larr;</span>Previous</div>
+        <div class="next">Next<span>&rarr;</span></div>
+    </section>
+
+    <footer class="main-footer full main-layout">
+        <div class="main-logo">Blogin<span>.</span></div>
+        <small>&copy 2014 Blogin.com - All Rights Reserved - Finf more free Templates at <a
+                href="#">Pixelhint.com</a></small>
+        <div class="social-links-container">
+            <ul class="flex clean-list flex">
+                <li><a class="fa facebook" href="www.facebook.com" aria-label="facebook link"></a></li>
+                <li><a class="fa twitter" href="www.twitter.com" aria-label="twitter link"></a></li>
+                <li><a class="fa be" href="#"></a></li>
+                <li><a class="toggleModal()" href="#"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <section class="modal flex align-center">
+        <h2>Join us to get access to the latest stories!</h2>
+        <form onsubmit="">
+            <input type="email" class="email" name="email" placeholder="Enter Your Email Here"/></form>
+            <button class="btn-modal btn-primary">Submit</button>
+            <button class="btn-modal btn-close" onclick="toggleModal()">✖</button>
+    </section>
+
+
+
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('menu-open');
+        }
+        function toggleModal() {
+            document.body.classList.toggle('modal-open');
+        }
+    </script>
+
+</body>
+
+</html>
